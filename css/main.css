@@ -1,0 +1,1093 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,600;0,700;0,800;1,200;1,300;1,400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Murecho:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Murecho:wght@100;200;300;400;500;600;700;800;900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+a {
+  text-decoration: none;
+  color: #FBF8F8;
+}
+
+html {
+  color: #222;
+  font-size: 1em;
+  line-height: 1.4;
+  font-family: 'Montserrat', Helvetica, sans-serif;
+}
+
+.main {
+  width: 100%;
+  height: 100vh;
+}
+
+::-moz-selection {
+  background: #b3d4fc;
+  text-shadow: none;
+}
+
+::selection {
+  background: #b3d4fc;
+  text-shadow: none;
+}
+
+/*
+ * content
+ */
+section {
+  width: 100%;
+  _height: 1080px;
+}
+
+.nav-h {
+  width: 100%;
+  height: 170px;
+  _border: 1px solid black;
+  padding: 10px 15px;
+  display: flex;
+  justify-content: flex-start;
+  font-family: 'Montserrat', Helvetica, sans-serif;
+  font-weight: 700;
+  margin-left: 50px;
+  position: relative;
+  overflow: hidden;
+}
+
+.nav-h ul {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  align-items: center;
+  margin-left: 145px;
+  margin-top: -100px;
+  _border: 1px solid black;
+}
+
+.nav-h li {
+  margin-left: 45px;
+  padding-left: 25px;
+  list-style: none;
+  cursor: pointer;
+}
+
+.nav-h a {
+  text-decoration: none;
+  color: rgb(196, 196, 196);
+  text-transform: uppercase;
+  font-size: 12px;
+  display: flex;
+  flex-direction: row;
+  transition: all 0.5s linear;
+}
+
+.nav-h a:hover {
+  color: #FFC59E;
+}
+
+li {
+  display: block;
+  transition-duration: 0.5s;
+}
+
+li:hover {
+  cursor: pointer;
+}
+
+ul li ul {
+  visibility: hidden;
+  opacity: 0;
+  position: absolute;
+  transition: all 0.5a ease;
+  display: none;
+}
+
+ul li:hover>ul,
+ul li ul:hover {
+  visibility: visible;
+  opacity: 1;
+  display: block;
+}
+
+.subNav {
+  position: absolute;
+  left: 250px;
+  padding-top: 110px;
+  font-size: 10px;
+  font-weight: 600;
+  _box-shadow: 3px 3px 7px 3px rgba(199, 199, 199, 0.1);
+}
+
+.subNav li {
+  padding: 7px 0;
+}
+
+
+.location {
+  margin-left: 150px;
+  color: #FFC59E;
+  padding-top: 15px;
+  text-transform: uppercase;
+  font-size: 12px;
+}
+
+.location img {
+  width: 25px;
+}
+
+.logo img {
+  width: 80px;
+}
+
+.content {
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  margin-left: 50px;
+  margin-top: 80px;
+}
+
+.nav-v {
+  display: flex;
+  flex-direction: column;
+  font-size: 15px;
+  font-family: 'Roboto', sans-serif;
+  font-size: 15px;
+}
+
+.nav-v a {
+  text-decoration: none;
+  color: rgb(160, 160, 160);
+  cursor: pointer;
+}
+
+.round {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 2px solid white;
+  margin-top: 15px;
+  padding-top: 8px;
+  padding-left: 14px;
+  cursor: pointer;
+}
+
+.round-black {
+  border: 2px solid rgba(0, 0, 0, 0.5);
+}
+
+.round a:hover {
+  color: bisque;
+  _transition: all 0.5s linear;
+}
+
+.round-black:hover,
+.round-black a:hover {
+  border-color: #FFC59E;
+  cursor: pointer;
+  color: bisque;
+  transition: all 0.3s linear;
+}
+
+.box-section {
+  width: 80%;
+  display: flex;
+  justify-content: center;
+  color: #000;
+  margin-left: 100px;
+}
+
+.left-content {
+  width: 40%;
+  margin-left: 30px;
+  _border: 1px solid black;
+}
+
+.left-content span a {
+  color: #FFC59E;
+}
+
+.socMedia {
+  width: 100%;
+  margin-top: 120px;
+  margin-left: -30px;
+}
+
+.socMedia img {
+  width: 30px;
+}
+
+.socMedia a {
+  cursor: pointer;
+  margin-left: 30px;
+  _transition: all 0.5s linear;
+}
+
+.socMedia img:hover {
+  _animation: bounceIn 0.5s;
+  _animation: zoomIn 0.5s;
+}
+
+.left-content h2 {
+  font-family: 'Murecho', sans-serif;
+  font-size: 45px;
+  font-weight: 400;
+}
+
+.left-content button {
+  background-color: #ffc59eb7;
+  border: 0;
+  padding: 10px 30px;
+  border-radius: 20px;
+  margin-top: 50px;
+  box-shadow: 2px 5px 15px #ffc59e77;
+  color: white;
+  font-weight: 600;
+  font-size: 15px;
+  cursor: pointer;
+}
+
+.left-content button:hover {
+  background-color: #221f1e8f;
+  color: white;
+  transition: all 0.5s linear;
+}
+
+.right-content {
+  position: relative;
+  width: 50%;
+  height: 500px;
+  _border: 1px solid black;
+}
+
+.right-content1 {
+  background: url('./../img/PuppyAndCatik.png')no-repeat;
+  background-size: cover;
+}
+
+.right-content2 {
+  background: url('./../img/doctorAndDog.png')no-repeat;
+  background-size: cover;
+}
+
+.right-content3 {
+  background: url('./../img/DogDoctor.png')no-repeat;
+  background-size: cover;
+}
+
+.right-content4 {
+  background: url('./../img/Rabbit.png')no-repeat;
+  background-size: cover;
+}
+
+.right-content5 {
+  background: url('./../img/Cater.png')no-repeat;
+  background-size: cover;
+}
+
+.right-content6 {
+  background: url('./../img/Puppys.png')no-repeat;
+  background-size: cover;
+}
+
+.right-content span {
+  position: absolute;
+  font-weight: 400;
+  bottom: 70px;
+  right: 0;
+  color: black;
+}
+
+/* section 2 */
+.row3,
+.box-help {
+  width: 100%;
+  margin: 50px auto;
+}
+
+.cards {
+  margin-left: 170px;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  width: 70%;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.card-box {
+  width: 200px;
+  margin: 10px;
+  _border: 1px solid rgba(224, 224, 224, 0.5);
+  border-radius: 15px;
+  -webkit-box-shadow: 10px 9px 19px 0px rgba(0, 0, 0, 0.18);
+  box-shadow: 3px 3px 7px 3px rgba(199, 199, 199, 0.1);
+  cursor: pointer;
+  padding-right: 20px;
+}
+
+.card-box img {
+  width: 90px;
+  margin: 10px;
+
+}
+
+.card-box h4 {
+  color: rgb(151, 150, 150);
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  padding: 15px 20px;
+}
+
+.card-box span {
+  font-size: 10px;
+  padding-top: 70px;
+  padding-left: 20px;
+}
+
+.card-box:hover {
+  box-shadow: 3px 3px 7px 3px rgba(199, 199, 199, 0.3);
+  transition: all 1s ease;
+}
+
+.box {
+  display: flex;
+  justify-content: space-between;
+}
+
+.box-image-terapia {
+  width: 90px;
+  height: 90px;
+  background: url('./../img/icons/terapia.png');
+  background-size: cover;
+  cursor: pointer;
+}
+
+.box-image-chirurgia {
+  width: 90px;
+  height: 90px;
+  background: url('./../img/icons/chirurgia.png');
+  background-size: cover;
+  cursor: pointer;
+}
+
+.box-image-nevrologia {
+  width: 90px;
+  height: 90px;
+  background: url('./../img/icons/nevrologia.png');
+  background-size: cover;
+  cursor: pointer;
+}
+
+.box-image-ortopedia {
+  width: 90px;
+  height: 90px;
+  background: url('./../img/icons/ortopedia.png');
+  background-size: cover;
+  cursor: pointer;
+}
+
+.box-image-dermatologia {
+  width: 90px;
+  height: 90px;
+  background: url('./../img/icons/dermatologia.png');
+  background-size: cover;
+  cursor: pointer;
+}
+
+.box-image-oftolmologia {
+  width: 90px;
+  height: 90px;
+  background: url('./../img/icons/oftolmologia.png');
+  background-size: cover;
+  cursor: pointer;
+}
+
+.box-image-kardiologia {
+  width: 90px;
+  height: 90px;
+  background: url('./../img/icons/kardiologia.png');
+  background-size: cover;
+  cursor: pointer;
+}
+
+.box-image-stamotologia {
+  width: 90px;
+  height: 90px;
+  background: url('./../img/icons/stamotologia.png');
+  background-size: cover;
+  cursor: pointer;
+}
+
+.box-image-reproduktologia {
+  width: 90px;
+  height: 90px;
+  background: url('./../img/icons/reproduktologia.png');
+  background-size: cover;
+  cursor: pointer;
+}
+
+.box-image-visualDiagnostik {
+  width: 90px;
+  height: 90px;
+  background: url('./../img/icons/visualDiagnostik.png');
+  background-size: cover;
+  cursor: pointer;
+}
+
+.box-image-laboratoria {
+  width: 90px;
+  height: 90px;
+  background: url('./../img/icons/laboratoria.png');
+  background-size: cover;
+  cursor: pointer;
+}
+
+.box-image-onkologia {
+  width: 90px;
+  height: 90px;
+  background: url('./../img/icons/onkologia.png');
+  background-size: cover;
+  cursor: pointer;
+}
+
+.box-image-endokrinologia {
+  width: 90px;
+  height: 90px;
+  background: url('./../img/icons/endokrinologia.png');
+  background-size: cover;
+  cursor: pointer;
+}
+
+.box-image-eksotic {
+  width: 90px;
+  height: 90px;
+  background: url('./../img/icons/eksotic.png');
+  background-size: cover;
+  cursor: pointer;
+}
+
+.box-image-apteka {
+  width: 90px;
+  height: 90px;
+  background: url('./../img/icons/apteka.png');
+  background-size: cover;
+  cursor: pointer;
+}
+
+.box-image-Gruming {
+  width: 90px;
+  height: 90px;
+  background: url('./../img/icons/Gruming.png');
+  background-size: cover;
+  cursor: pointer;
+}
+
+.box-image-terapia:hover {
+  background: url('./../img/icons/terapia-gray.png');
+  background-size: cover;
+  transition: all 1s ease;
+}
+
+.box-image-chirurgia:hover {
+  background: url('./../img/icons/chirurgia-gray.png');
+  background-size: cover;
+  transition: all 1s ease;
+}
+
+.box-image-nevrologia:hover {
+  background: url('./../img/icons/nevrologia-gray.png');
+  background-size: cover;
+  transition: all 1s ease;
+}
+
+.box-image-ortopedia:hover {
+  background: url('./../img/icons/ortopedia-gray.png');
+  background-size: cover;
+  transition: all 1s ease;
+}
+
+.box-image-dermatologia:hover {
+  background: url('./../img/icons/dermatologia-gray.png');
+  background-size: cover;
+  transition: all 1s ease;
+}
+
+.box-image-oftolmologia:hover {
+  background: url('./../img/icons/oftolmologia-gray.png');
+  background-size: cover;
+  transition: all 1s ease;
+}
+
+.box-image-kardiologia:hover {
+  background: url('./../img/icons/kardiologia-gray.png');
+  background-size: cover;
+  transition: all 1s ease;
+}
+
+.box-image-stamotologia:hover {
+  background: url('./../img/icons/stamotologia-gray.png');
+  background-size: cover;
+  transition: all 1s ease;
+}
+
+.box-image-reproduktologia:hover {
+  background: url('./../img/icons/reproduktologia-gray.png');
+  background-size: cover;
+  transition: all 1s ease;
+}
+
+.box-image-visualDiagnostik:hover {
+  background: url('./../img/icons/visualDiagnostik-gray.png');
+  background-size: cover;
+  transition: all 1s ease;
+}
+
+.box-image-laboratoria:hover {
+  background: url('./../img/icons/laboratoria-gray.png');
+  background-size: cover;
+  transition: all 1s ease;
+}
+
+.box-image-onkologia:hover {
+  background: url('./../img/icons/onkologia-gray.png');
+  background-size: cover;
+  transition: all 1s ease;
+}
+
+.box-image-endokrinologia:hover {
+  background: url('./../img/icons/endokrinologia-gray.png');
+  background-size: cover;
+  transition: all 1s ease;
+}
+
+.box-image-eksotic:hover {
+  background: url('./../img/icons/eksotic-gray.png');
+  background-size: cover;
+  transition: all 1s ease;
+}
+
+.box-image-apteka:hover {
+  background: url('./../img/icons/apteka-gray.png');
+  background-size: cover;
+  transition: all 1s ease;
+}
+
+.box-image-Gruming:hover {
+  background: url('./../img/icons/Gruming-gray.png');
+  background-size: cover;
+  transition: all 1s ease;
+}
+
+/* section3 */
+.row3 {
+  width: 100%;
+  height: 900px;
+  background-color: #FBF8F8;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.blockOne {
+  width: 50%;
+  margin: 0 auto;
+  padding-top: 100px;
+}
+
+.blockOne h3,
+.blockTwo h3 {
+  font-weight: 600;
+  font-family: 'Montserrat', Helvetica, sans-serif;
+  padding-bottom: 30px;
+  color: #999;
+}
+
+.blockOne p {
+  width: 300px;
+  margin: 0 auto;
+  text-align: left;
+  font-size: 12px;
+}
+
+.blockOne span {
+  display: block;
+  font-size: 14px;
+  color: #FFC59E;
+  padding-top: 20px;
+  cursor: pointer;
+}
+
+.blockOne span:hover,
+.gallery a:hover {
+  color: #ffc59ea8;
+}
+
+.blockTwo {
+  margin-top: 55px;
+}
+
+.gallery a {
+  color: #FFC59E;
+}
+
+/* box-help */
+.box-help {
+  height: 400px;
+  text-align: center;
+  margin-top: 150px;
+  _position: relative;
+}
+.helpImg img{
+  margin-top: -290px;
+  margin-left: 200px;
+  width: 350px;
+}
+
+.box-help h1 {
+  font-size: 80px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 600;
+}
+.box-help h2{
+  font-size: 35px;
+  font-weight: 500;
+}
+
+/* section4 */
+.row4 {
+  width: 100%;
+  margin: 50px auto;
+}
+
+.row4 h2 {
+  font-weight: 500;
+  text-align: center;
+  padding-top: 50px;
+}
+
+.card-box-two {
+  width: 330px;
+  margin: 20px;
+}
+
+.card-box-two h4 {
+  font-weight: 600;
+}
+
+.card-box-two img {
+  width: 75px;
+  height: 100%;
+  padding-top: 10px;
+}
+
+.card-box-two p {
+  width: 75%;
+  font-size: 12px;
+  padding-top: 15px;
+  _padding-left: 10px;
+}
+
+.row5 {
+  width: 100%;
+  height: 700px;
+  background-color: #FFC59E;
+  display: flex;
+  justify-content: center;
+  color: #fff;
+  padding-left: 100px;
+}
+
+.left-box5 {
+  width: 40%;
+  margin-top: 150px;
+  margin-right: -200px;
+  text-align: left;
+  _border: 1px solid black;
+}
+
+.left-box5 h2 {
+  font-weight: 500;
+  font-size: 38px;
+  padding-top: 10px;
+  font-family: 'Montserrat', Helvetica, sans-serif;
+}
+
+.right-box5 {
+  display: flex;
+  justify-self: start;
+  position: relative;
+  width: 40%;
+  _border: 1px solid black;
+}
+
+.dogImg img {
+  width: 220px;
+  position: absolute;
+  top: 220px;
+  left: 30px;
+}
+
+.phoneImg img {
+  width: 220px;
+  position: absolute;
+  top: 110px;
+  left: 170px;
+}
+
+.app-logo-box5 {
+  display: flex;
+  justify-self: start;
+}
+
+.app-logo-box5 img {
+  width: 90px;
+  margin-right: 25px;
+  margin-top: 50px;
+}
+
+/* contacts */
+
+.row6 {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  margin: 50px auto;
+}
+
+.contacts {
+  width: 30%;
+  margin-left: 50px;
+  _border: 1px solid black;
+}
+
+.contacts h3 {
+  font-weight: 500;
+  font-size: 25px;
+  margin: 30px 0;
+}
+
+.contacts h4 {
+  font-weight: 500;
+  font-size: 16px;
+}
+
+.contentContact {
+  display: flex;
+  justify-content: start;
+  margin: 15px 0;
+  _border: 1px solid black;
+}
+
+.iconContact img {
+  width: 35px;
+  _padding-top: 10px;
+}
+
+.textContact {
+  font-size: 12px;
+  padding-top: 7px;
+  padding-left: 10px;
+}
+
+.map {
+  width: 50%;
+  margin-top: 50px;
+}
+
+.clear {
+  height: 50px;
+}
+
+/* footer */
+
+.footer {
+  width: 100%;
+  height: 300px;
+  background-color: #59443f;
+  padding: 50px 30px 20px 130px;
+  display: flex;
+  justify-content: space-around;
+  color: #fff;
+}
+
+.footer-box1 {
+  display: flex;
+  width: 65%;
+  color: #fff;
+  _border: 1px solid white;
+}
+
+.footer-text1 {
+  margin-left: 20px;
+}
+
+.footer-text1 h3 {
+  font-size: 30px;
+  font-weight: 500;
+}
+
+.footer-text1 small {
+  font-size: 11px;
+}
+
+.footer-text-box1 {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 20px;
+  margin-right: 15px;
+}
+
+.colum1,
+.colum2,
+.colum3 {
+  font-size: 10px;
+}
+
+.colum2,
+.colum3 {
+  margin-left: 100px;
+}
+
+.footer-box2 {
+  width: 30%;
+  _border: 1px solid white;
+}
+
+.app-logo {
+  display: flex;
+  justify-content: center;
+
+}
+
+.app-logo img {
+  width: 100px;
+  margin-right: 15px;
+  background-color: #FBF8F8;
+  padding: 1px;
+  border-radius: 5px;
+}
+
+.box-logo {
+  width: 70px;
+  height: 70px;
+  background-color: #FBF8F8;
+  border-radius: 50%;
+}
+
+.box-logo img {
+  width: 70px;
+  padding-top: 5px;
+}
+
+.social-icons {
+  margin-left: 80px;
+  margin-top: 20px;
+}
+
+.social-icons img {
+  width: 35px;
+  margin-right: 20px;
+}
+
+.footer-text2 {
+  font-size: 11px;
+  margin: 20px 0 0 80px;
+}
+
+/* --- */
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #ccc;
+  margin: 1em 0;
+  padding: 0;
+}
+
+audio,
+canvas,
+iframe,
+img,
+svg,
+video {
+  vertical-align: middle;
+}
+
+/*
+ * Remove default fieldset styles.
+ */
+
+fieldset {
+  border: 0;
+  margin: 0;
+  padding: 0;
+}
+
+textarea {
+  resize: vertical;
+}
+
+
+.hidden,
+[hidden] {
+  display: none !important;
+}
+
+
+.sr-only {
+  border: 0;
+  clip: rect(0, 0, 0, 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  /* 1 */
+}
+
+/*
+ * Extends the .sr-only class to allow the element
+ * to be focusable when navigated to via the keyboard:
+ * https://www.drupal.org/node/897638
+ */
+
+.sr-only.focusable:active,
+.sr-only.focusable:focus {
+  clip: auto;
+  height: auto;
+  margin: 0;
+  overflow: visible;
+  position: static;
+  white-space: inherit;
+  width: auto;
+}
+
+/*
+ * Hide visually and from screen readers, but maintain layout
+ */
+
+.invisible {
+  visibility: hidden;
+}
+
+/*
+ * Clearfix: contain floats
+ *
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    `contenteditable` attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that receive the `clearfix` class.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+
+.clearfix::before,
+.clearfix::after {
+  content: " ";
+  display: table;
+}
+
+.clearfix::after {
+  clear: both;
+}
+
+/* ==========================================================================
+  EXAMPLE Media Queries for Responsive Design.
+  These examples override the primary ('mobile first') styles.
+  Modify as content requires.
+   ========================================================================== */
+
+@media only screen and (min-width: 35em) {
+  /* Style adjustments for viewports that meet the condition */
+}
+
+@media print,
+(-webkit-min-device-pixel-ratio: 1.25),
+(min-resolution: 1.25dppx),
+(min-resolution: 120dpi) {
+  /* Style adjustments for high resolution devices */
+}
+
+/* ==========================================================================
+   Print styles.
+   Inlined to avoid the additional HTTP request:
+   https://www.phpied.com/delay-loading-your-print-css/
+   ========================================================================== */
+
+@media print {
+
+  *,
+  *::before,
+  *::after {
+    background: #fff !important;
+    color: #000 !important;
+    /* Black prints faster */
+    box-shadow: none !important;
+    text-shadow: none !important;
+  }
+
+  a,
+  a:visited {
+    text-decoration: underline;
+  }
+
+  a[href]::after {
+    content: " ("attr(href) ")";
+  }
+
+  abbr[title]::after {
+    content: " ("attr(title) ")";
+  }
+
+  /*
+   * Don't show links that are fragment identifiers,
+   * or use the `javascript:` pseudo protocol
+   */
+  a[href^="#"]::after,
+  a[href^="javascript:"]::after {
+    content: "";
+  }
+
+  pre {
+    white-space: pre-wrap !important;
+  }
+
+  pre,
+  blockquote {
+    border: 1px solid #999;
+    page-break-inside: avoid;
+  }
+
+  /*
+   * Printing Tables:
+   * https://web.archive.org/web/20180815150934/http://css-discuss.incutio.com/wiki/Printing_Tables
+   */
+  thead {
+    display: table-header-group;
+  }
+
+  tr,
+  img {
+    page-break-inside: avoid;
+  }
+
+  p,
+  h2,
+  h3 {
+    orphans: 3;
+    widows: 3;
+  }
+
+  h2,
+  h3 {
+    page-break-after: avoid;
+  }
+}
