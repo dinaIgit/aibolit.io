@@ -115,7 +115,7 @@ ul li ul:hover {
 
 .subNav {
   position: absolute;
-  left: 250px;
+  left: 230px;
   padding-top: 110px;
   font-size: 10px;
   font-weight: 600;
@@ -136,7 +136,7 @@ ul li ul:hover {
 }
 
 .location img {
-  width: 25px;
+  width: 15px;
 }
 
 .logo img {
